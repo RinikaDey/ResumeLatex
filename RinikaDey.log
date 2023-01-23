@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.7.21)  13 JAN 2023 23:12
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.7.21)  24 JAN 2023 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,27 +959,29 @@ LaTeX Font Warning: Font shape `TU/Lato-Light(0)/m/sc' undefined
 LaTeX Font Warning: Font shape `TU/Lato-Black(0)/b/n' undefined
 (Font)              using `TU/Lato-Black(0)/m/n' instead on input line 70.
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 111.
+
+LaTeX Font Warning: Font shape `TU/FontAwesome(0)/b/n' undefined
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 112.
+
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 139.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 111.
+(Font)              size <5> substituted on input line 139.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 111.
+(Font)              size <5> substituted on input line 139.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 111.
+(Font)              <11> on input line 139.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 111.
+(Font)              <7.69997> on input line 139.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 111.
+(Font)              <5.5> on input line 139.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 111.
+(Font)              size <5> substituted on input line 139.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 116.
 [1
 
 ] (RinikaDey.aux)
@@ -991,15 +993,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `RinikaDey.out' has not changed.
-(rerunfilecheck)             Checksum: DFF5A5877604ADF0075B7F99E2140733;254.
+(rerunfilecheck)             Checksum: 78C526717B16893F3B25D44B65D5BB86;453.
  ) 
 Here is how much of TeX's memory you used:
- 18531 strings out of 410670
- 343536 string characters out of 2816708
- 721534 words of memory out of 3000000
- 39283 multiletter control sequences out of 15000+600000
- 474088 words of font info for 131 fonts, out of 8000000 for 9000
+ 18540 strings out of 410670
+ 343966 string characters out of 2816708
+ 726775 words of memory out of 3000000
+ 39288 multiletter control sequences out of 15000+600000
+ 474120 words of font info for 135 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 115i,11n,148p,407b,340s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 115i,11n,148p,392b,340s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on RinikaDey.pdf (1 page).
