@@ -1,0 +1,104 @@
+\documentclass[8pt]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\ \descript{#2}\fakeNewLine}
+\newcommand{\projectHeading}[3]{\Project{#1}{#2} \descript{#3}\\}
+
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Rinika Dey}
+\newcommand{\yourEmail}{pori75dey@gmail.com}
+\newcommand{\yourPhone}{+91 7890680872}
+\newcommand{\githubUserName}{RinikaDey}
+\newcommand{\linkedInUserName}{rinikadey}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{LinkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{GitHub/\githubUserName}} 
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+\educationHeading{MCA}{Maulana Abul Kalam Azad University of Technology (MAKAUT)}{9.71 | Regent Education and Research Foundation, Kolkata}{2019 - 2022}
+\sectionsep
+
+\educationHeading{BSc. Computer Application}{West Bengal State University (WBSU)}{64.13\% | Rishi Bankim Chandra College, Kolkata}{2015 - 2018}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Experience}
+\resumeHeading{Symmetrix Systems Pvt Ltd}{Web Developer Trainee}{Kolkata, India}{Oct 2023 - May 2024}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Developed \textbf{custom WordPress themes} tailored to client specifications.
+    \item Integrated \textbf{Spring Boot} microservices into existing systems to enhance backend functionalities.
+    \item Designed and deployed \textbf{RESTful APIs} using Spring Boot to improve scalability and maintainability.
+    \item Customized \textbf{WordPress CMS} for seamless integration with Spring Boot, automating data operations.
+    \item Implemented \textbf{SEO strategies}, improving website performance by 30\%.
+\end{itemize}
+
+\resumeHeading{Codearts Solution Pvt Ltd}{Jr. Web Developer Intern}{Kolkata, India}{Aug 2022 – Apr 2023}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Developed components of the internal product, Codearts ERM, including the \textbf{Holiday, Notice, and Chat Modules}.
+    \item Built frontend and backend using \textbf{PHP, MySQL, JS, jQuery, Bootstrap}, incorporating AJAX calls and session handling.
+    \item Worked on \textbf{WordPress Theme Development}, and supported various clients like \textbf{KMG Import} and \textbf{Hair Doctor NYC}.
+\end{itemize}
+\sectionsep
+
+\resumeHeading{Shunya Intelliware Solutions}{Trainee Software Developer Intern}{Kolkata, India}{May 2022 – Jul 2022}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Conducted testing for various \textbf{Android apps} and websites, identifying key usability issues.
+    \item Produced detailed reports on website designs and user experience improvements.
+\end{itemize}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+
+\projectHeading{Symmetrix Management System}{https://github.com/RinikaDey/symmetrix-management-system}{Spring Boot, Java, MySQL, HTML, CSS, JavaScript}
+A management system for Symmetrix Systems to handle employee data, project assignments, and resource tracking. Built with \textbf{Spring Boot}, \textbf{RESTful APIs}, and \textbf{MySQL}, it automated project tracking, task allocation, and employee management.
+
+\projectHeading{Codearts ERM}{https://github.com/RinikaDey/codearts-ERM}{HTML, CSS, JavaScript, PHP, MySQL}
+An Employee Management System (ERM) developed for Codearts Solution. Manages employee profiles, leave, timesheets, notices, and access logs through a user-friendly interface.
+
+\projectHeading{KMG-Import eCommerce Website}{https://www.kmg-import.com/}{WordPress, WooCommerce, PHP, HTML, CSS, JavaScript}
+Developed a live eCommerce site for KMG Import, featuring product listings, user authentication, and an integrated payment system using WooCommerce.
+
+\projectHeading{Custom WordPress Theme with Backend}{https://github.com/RinikaDey/wordpress_database}{WordPress, PHP, MySQL, HTML, CSS, Bootstrap}
+Developed a custom WordPress theme integrated with backend services, including custom database interactions and user management features.
+\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{skillList}
+    \singleItem{Languages:}{Java, C, C++, PHP, SQL, Python}
+    \\
+    \singleItem{Web Development:}{Spring Boot, Spring Framework, PHP, JavaScript, WordPress, HTML, CSS, Bootstrap}
+    \\
+    \singleItem{Technologies:}{Git, GitHub, Postman, Linux, MySQL, RESTful APIs}
+    \\
+    \singleItem{Achievements:}{Employee of the Month (Nov 2022) \textit{(Codearts Solution Pvt Ltd)}}
+\end{skillList}
+\sectionsep
+
+\end{document}
