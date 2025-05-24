@@ -1,0 +1,100 @@
+\documentclass[8pt]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\ \descript{#2}\fakeNewLine}
+\newcommand{\projectHeading}[3]{\Project{#1}{#2} \descript{#3}\\}
+
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Rinika Dey}
+\newcommand{\yourEmail}{pori75dey@gmail.com}
+\newcommand{\yourPhone}{+91 7890680872}
+\newcommand{\githubUserName}{RinikaDey}
+\newcommand{\linkedInUserName}{rinikadey}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{LinkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{GitHub/\githubUserName}} 
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+\educationHeading{MCA}{Maulana Abul Kalam Azad University of Technology (MAKAUT)}{9.71 | Regent Education and Research Foundation, Kolkata}{2019 - 2022}
+\sectionsep
+
+\educationHeading{B.Sc. Computer Application}{West Bengal State University (WBSU)}{64.13\% | Rishi Bankim Chandra College, Kolkata}{2015 - 2018}
+\sectionsep
+
+\educationHeading{H.S.}{West Bengal Council of Higher Secondary Education (WBCHSE)}{67.8\% | Bhatpara Central Hindu Girls' High School, Bhatpara}{2013 - 2015}
+\sectionsep
+
+\educationHeading{Madhyamik}{West Bengal Board of Secondary Education (WBBSE)}{69.14\% | Uttar Garifa Pallimangal High School, Garifa}{2013}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Experience}
+\resumeHeading{Symmetrix Systems Pvt Ltd}{Web Developer Trainee}{Kolkata, India}{Oct 2023 - May 2024}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Designed and implemented secure login and registration systems using PHP sessions and password hashing \textbf{\textbf{password hash, password verify}}.
+    \item Developed CRUD operations \textbf{(Create, Read, Update, Delete)} with \textbf{MySQLi and PDO} for user management and data entry modules.
+    \item Handled form submissions with \textbf{validation, sanitization (htmlspecialchars, mysqli real escape string)} to prevent \textbf{XSS and SQL injection}.
+    \item Implemented \textbf{session management} and access control for \textbf{authenticated users} across pages.
+    \item Integrated \textbf{file upload} system with size/type restrictions and error handling using \textbf{\$FILES}.
+    \item Integrated \textbf{AJAX} with \textbf{PHP for real-time form} submissions and dynamic content loading.
+    \item Used \textbf{cookies and sessions} to store user preferences and maintain login states across pages.
+    \item Created \textbf{reusable config files} for \textbf{DB connection, base URL, and constants} to centralize environment configuration.
+\end{itemize}
+
+\resumeHeading{Codearts Solution Pvt Ltd}{Jr. Web Developer Intern}{Kolkata, India}{Aug 2022 – Apr 2023}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Developed components of the internal product, Codearts ERM, including the \textbf{Holiday, Notice, and Chat Modules} along with bug fixing and code optimization for performance of the application.
+    \item Implemented \textbf{real-time chat functionality} using \textbf{long-polling} and \textbf{efficient server-side message handling} in PHP.
+    \item Integrated \textbf{file upload system} for \textbf{holiday applications and notice attachments} with \textbf{size/type restrictions}.
+    \item Built \textbf{custom authentication} and \textbf{access control systems} using PHP \textbf{sessions and role-based permissions} like \textbf{HR, Admin, Employee} etc.
+    \item Built frontend and backend using \textbf{PHP, MySQL, JS, jQuery, Bootstrap}, incorporating AJAX calls and session handling.
+    \item Worked on \textbf{WordPress Theme Development}, and supported various clients like \textbf{KMG Import} and \textbf{Hair Doctor NYC}.
+\end{itemize}
+\sectionsep
+
+\resumeHeading{Shunya Intelliware Solutions}{Trainee Software Developer Intern}{Kolkata, India}{May 2022 – Jul 2022}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Conducted testing for various \textbf{Android apps} and websites, identifying key usability issues.
+    \item Produced \textbf{detailed reports} on website designs and user experience improvements. 
+    \item Performed end to end \textbf{unit testing} and \textbf{integration testing} to identify issues.
+    \item Performed \textbf{UI testing} on \textbf{different screen sizes and resolutions} to ensure responsive layout.
+\end{itemize}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{skillList}
+    \singleItem{Languages:}{Java, C, C++, PHP, SQL}
+    \\
+    \singleItem{Web Development:}{PHP, MySQL, Laravel, WordPress, Spring Boot, Spring Framework, HTML, CSS, JS, Bootstrap, }
+    \\
+    \singleItem{Technologies:}{Git, GitHub, Postman, Linux, RESTful APIs}
+    \\
+    \singleItem{Achievements:}{Employee of the Month (Nov 2022) \textit{(Codearts Solution Pvt Ltd)}}
+\end{skillList}
+\sectionsep
+
+\end{document}

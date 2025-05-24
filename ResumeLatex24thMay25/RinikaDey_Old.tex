@@ -1,0 +1,151 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Rinika Dey}
+% How you want it to show up on the resume
+\newcommand{\yourWebsite}{www.google.co.in}
+% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourWebsiteLink}{https://www.google.co.in/}
+\newcommand{\yourEmail}{pori75dey@gmail.com}
+\newcommand{\yourPhone}{+917890680872}
+\newcommand{\githubUserName}{RinikaDey}
+\newcommand{\linkedInUserName}{rinikadey}
+
+% An alternate profile section 
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsiteLink}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsiteLink}{\yourWebsite}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} 
+    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+\educationHeading{MCA}{Maulana Abul Kalam Azad University of Technology (MAKAUT)}{Regent Education and Research Foundation  Group of Institutions, (9.71 of 10)}{2019 - 2022}
+
+%\teacherAssistant{World Wide Web Information Systems Development}
+%\courseWork{DSA; OOP with Java; DBMS I; DBMS II; C; C++; Software Engineering and TQM; Computer Networks; Business Management; Unix and Shell Programming}
+\sectionsep
+
+% Put school first and degree second if your school is reputable
+\educationHeading{BSc. (Major) Computer Application}{West Bengal State University (WBSU)}{Rishi Bankim Chandra College, (64.13 of 100)}{2015 - 2018}
+
+%\teacherAssistant{World Wide Web Information Systems Development}
+%\courseWork{C; C++; DBMS; CN; Shell, Microprocessor, Computer Organization and Architecture}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Experience}
+\resumeHeading{Symmetrix Systems Pvt Ltd}{Web Developer Trainee}{Kolkata, ON}{Oct 2023 - May 2024}
+\begin{bullets}
+    \item Developed \textbf{custom WordPress themes} tailored to client needs. 
+    \item Worked on \textbf{core PHP} applications.
+    \item Managed and customized \textbf{WordPress CMS} for improved functionality.
+    \item Implemented \textbf{SEO strategies} to boost website \textbf{performance}.
+    \item Worked on some \textbf{HTML/CSS} frontend designs.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Codearts Solution Pvt Ltd}{Jr. Web Developer Intern}{Kolkata, ON}{Aug 2022 – April 2023}
+\begin{bullets}
+    \item Developed multiple components of ERM, an internal product of Codearts Solution Pvt. Ltd. like \textbf{Holiday Module, Notice Module, Chat Module} etc. in \textbf{PHP, MYSQL, HTML, CSS, JS, JQUERY, BOOTSTRAP} both frontend and backend with \textbf{AJAX calls and PHP SESSIONS} maintaining PR on daily basis using \textbf{GIT and GITHUB}. 
+    \item Worked on \textbf{Wordpress Theme Development, Content Management, Wocommerce} etc. helping multiple clients like \textbf{KMG Import, IRON CURTAIN CUSTOMS, Hair Doctor NYC} etc.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Shunya Intelliware Solutions}{Trainee Software Developer Intern}{Kolkata, ON}{May 2022 –  Jul 2022}
+\begin{bullets}
+    \item Observed \textbf{design} of various websites, making \textbf{detailed reports} of these websites.
+    \item Testing various cases for \textbf{android apps and websites}.
+\end{bullets}
+\sectionsep
+
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+  
+\projectHeading{Codearts ERM}{https://github.com/RinikaDey/codearts-ERM}{Html, Css, Javascript, Bootstrap, PHP, Mysql}
+A Employee Management System i.e. ERM for managing all modules like, employee profile, leave, holiday, timesheet, gracetime, notice, access log etc.\\
+\sectionsep
+
+\projectHeading{KMG-Import}{https://www.kmg-import.com/}{Wordpress, Woocommerce, Html, Css, Javascript, Bootstrap, PHP}
+A live eCommerce website built with woocommerce.\\
+\sectionsep
+
+\projectHeading{Wordpress Website with Custom theme, Backend and Database}{https://github.com/RinikaDey/wordpress_database}{Wordpress, Theme Development, PHP, Mysql, Html, Css, Bootstrap}
+A custom theme for wordpress.\\
+\sectionsep
+
+\section{Other Projects}
+
+\projectHeading{Worked on}{https://www.linkedin.com/in/rinikadey/}{}
+Website design checking, Android app testing, Laravel framework, Artificial Intelligence, Neural Network
+\sectionsep
+
+  
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{skillList}
+    \singleItem{Languages:}{Java, C, C++, PHP, SQL, Python}
+    \\
+    \singleItem{Web Development:}{PHP, JavaScript, Wordpress, HTML, CSS, Bootstrap}
+    \\
+    \singleItem{Technology:}{Git, Github, Postman, Linux, XAMP stack}
+    \\
+    \singleItem{Achievement:}{Employee of the month (November'2022) \textit{(Associated with \textbf{Codearts Solution Pvt Ltd})}}
+\end{skillList}
+
+\end{document}
